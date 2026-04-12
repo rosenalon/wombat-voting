@@ -51,7 +51,7 @@ body.width-fluid div.wpr{width:90%;}
 /* layout */
 div#home{background:none;position:relative;}
 div.wpr{margin:auto;}
-div.wpr .wpr-br{min-height:470px;padding:0px;}
+div.wpr .wpr-br{min-height:30px;padding:0px;}
 div#header{position:relative;height:90px;margin:0px;}
 div#header div#logo{position:absolute;top:10px;right:0px;width:auto;height:70px;}
 div#header div#logo h1{}
@@ -63,7 +63,7 @@ div#midbanner div#midleft a.verify {width:255px;height:67px;display:block;backgr
 div#midbanner div#midleft a.verify:hover {width:255px;height:67px;display:block;background-position:-261px 0;text-align:center;color:#FFF;padding:15px 0 0 0;font-size:29px;text-decoration:none;}
 div#midbanner div#midright {width:auto;display:block;float:left;margin:0 0px 0 0px;padding:15px 0 0 8px;}
 div#middle{width:auto;margin:0px 0px 0px 0px;clear:both;}
-div#middle .background{min-height:140px;}
+div#middle .background{min-height:30px;}
 div#middle .layoutright{background:#none;}
 div#main{width:auto;}
 div#middle .layoutright div#main{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}
