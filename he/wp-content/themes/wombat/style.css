@@ -205,7 +205,7 @@ div#topmenu li.current_page_item a {color:#000;}
 	padding: 0px;
 	}
 	
-#topmenu li {float:right;display:block;font-family: Arial; font-stretch: condensed;text-transform:uppercase;background:none;padding:15px 7px 0 7px; color:#fff;text-decoration:none; font-weight:900;height:34px;}
+#topmenu li {float:right;display:block;font-family: Arial; font-stretch: condensed;text-transform:uppercase;background:none;padding:15px 3px 0 3px; color:#fff;text-decoration:none; font-weight:900;height:34px;}
 	
 #topmenu li a, #topmenu li a:link, #topmenu li a:visited, #topmenu li a:active {
 	color: #fff;
