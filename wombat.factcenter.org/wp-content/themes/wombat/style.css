@@ -1,0 +1,300 @@
+/*
+Theme Name: Wombat
+Theme URI: http://www.silverf0x.com
+Description: Wombat Voting System Wordpress Themes in Green. Support WP 3.1.2
+@license - Copyright by Wombat.
+Version: 1.0
+Author: Silverf0x
+Author URI: http://www.silverf0x.com
+*/
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border:0;}
+html{height:100%;margin-bottom:1px;}
+body{height:100%;position:relative;}
+p {text-align:justify;}
+ul{margin:0;padding:0;}
+ul li{margin:0;padding:0;list-style:none;}
+ol{margin:0;padding:0;}
+ol li{margin:0;padding:0;list-style:none;}
+a img{border:none;}
+p img{padding:0;max-width:100%;}
+.clear{clear:both;}
+
+a:link, a:active, a:visited{color:#09F; text-decoration:underline;}
+a:hover{color:#09F; text-decoration:none;}
+
+h1, h2, h3, h4, h5, h6{font-family:Arial,Tahoma,Verdana;font-weight:normal;padding-bottom:0px;margin-bottom:5px;line-height:100%;color:#000;letter-spacing:-50;}
+h1{font-size:250%;}
+h2{font-size:225%;padding:5px 0;}
+h3{font-size:200%;padding:5px 0;}
+h4{font-size:160%;padding:5px 0;}
+h5{font-size:150%;padding:5px 0;}
+h6{font-size:125%;padding:5px 0;}
+
+/* page setup */
+body{font-family:Arial,Tahoma,Verdana;font-size:13px;color:#000;margin:0;}
+body#page{background:url(images/bg.gif) top repeat-x #FFF;margin:0;}
+body#page2{background:url(images/bg2.gif) top repeat-x #FFF;margin:0;}
+
+/* set body font size (styleswitcher) */
+body.font-small{font-size:11px;}
+body.font-medium{font-size:12px;}
+body.font-large{font-size:13px;}
+
+/* set body width (styleswitcher) */
+body.width-thin div.wpr{width:800px;}
+body.width-wide div.wpr{width:930px;}
+body.width-fluid div.wpr{width:90%;}
+
+/* layout */
+div#home{background:none;position:relative;}
+div.wpr{margin:auto;}
+div.wpr .wpr-br{min-height:470px;padding:0px;}
+div#header{position:relative;height:90px;margin:0px;}
+div#header div#logo{position:absolute;top:10px;left:0px;width:auto;height:70px;}
+div#header div#logo h1{}
+div#header div#logo h3{}
+div#midbanner{position:relative;height:330px;margin:0px;padding:0px;}
+div#midbanner div#midleft {width:300px;display:block;float:left;padding:45px 0 0 0;}
+div#midbanner div#midleft div#idc {color:#000;font-size:18px;margin:30px 0px 10px 6px;}
+div#midbanner div#midleft a.verify {width:255px;height:67px;display:block;background:url(images/verify-bg.jpg) no-repeat;text-align:center;padding:11px 0 0 0;color:#09f;padding:15px 0 0 0;font-size:29px;text-decoration:none;}
+div#midbanner div#midleft a.verify:hover {width:255px;height:67px;display:block;background-position:-261px 0;text-align:center;padding:11px 0 0 0;color:#FFF;padding:15px 0 0 0;font-size:29px;text-decoration:none;}
+div#midbanner div#midright {width:auto;display:block;float:right;margin:0 0px 0 0px;padding:15px 8px 0 0;}
+div#middle{width:auto;margin:0px 0px 0px 0px;clear:both;}
+div#middle .background{min-height:140px;}
+div#middle .layoutright{background:#none;}
+div#main{width:auto;}
+div#middle .layoutright div#main{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}
+div#middle .withoutleft div#main{margin:0px 12px 0px 12px;}
+div#mainmiddle{margin:0px 0px 10px 0px; border:1px solid #FFF:}
+div#main .withright{}
+div#content{width:auto;}
+div#footer{width:auto;padding:40px 0px 0px 0px;clear:both;color:#838383;background:url(images/footer_bg.gif) top repeat-x #d4d4d4;font-size:11px;min-height:100px;max-height:20%;display:block;}
+
+/* Left */
+div#left{width:285px;padding:0px 0px 0px 0px;float:left;margin:5px 0px 0px 0px;}
+div#left ul	{margin:10px 0 0 0;}
+div#left ul	li {color:#FFF;font-size:21px;text-decoration:none;}
+div#left ul	li a {display:block;width:251px;height:35px;background:url(images/li_bg2.jpg) top no-repeat;color:#FFF;text-align:center;padding:8px 0 7px 0;margin:0 0 0px 0;text-decoration:none;}
+div#left ul	li a:hover {background:url(images/li_bg3.jpg) top no-repeat;}
+div#left ul	li.current_page_item a{width:251px;background:url(images/li_bg.jpg) top no-repeat;height:35px;color:#FFF;font-size:21px;text-align:center;padding:8px 0 7px 0;margin:0 0 0 0;text-decoration:none;}
+div#left ul	li.current_page_item a:hover {background:url(images/li_bg3.jpg) top no-repeat;}
+div#left ul	li.current a{width:251px;background:url(images/li_bg.jpg) top no-repeat;height:35px;color:#FFF;font-size:21px;text-align:center;padding:8px 0 7px 0;margin:0 0 0 0;text-decoration:none;}
+div#left ul	li.current a:hover {background:url(images/li_bg3.jpg) top no-repeat;}
+
+div#left div#sponsor {width:170px;border:1px solid #cecece;border-radius:6px;moz-border-radius:6px;webkit-border-radius:6px;text-align:center;padding:5px;margin:0 0 0 45px;}
+div#left div#sponsor #idc {padding-top:10px;padding-bottom:10px;border-bottom:1px dashed #cecece;}
+div#left div#sponsor #tau {padding-bottom:10px;border-bottom:1px dashed #cecece;}
+div#left div#sponsor #cpiis {padding-top:5px;padding-bottom:5px;}
+
+/* clearing & floating */
+.clearingfix:after{content:".";display:block;line-height:0px;clear:both;visibility:hidden;}
+.clearingfix{display:block;}
+.floatbox{overflow:hidden;}
+
+div#lang{position:absolute;top:5px;right:6px;height:34px;font-size:13px;}
+div#lang a{color:#FFF;text-decoration:none;}
+
+/* comments */
+div.comment{background:#FFF;padding:35px 5px 5px 5px;margin:5px 0px 0px 0px;line-height:115%;}
+div.comment a:link, div.comment a:visited{color:#09F; font-weight:bold;}
+div.comment a:hover {color:#09F;}
+div.comment h2{font-size:36px;font-weight:normal;color:#000;margin:0 0 15px 0;}
+div.comment h2.front{font-size:23px;font-weight:normal;color:#FF9300;margin:0 0 5px 0;}
+div.comment h2 a:link, div.comment h2 a:visited{color:#09F;text-decoration:none;}
+div.comment h2 a:hover{color:#09F; text-decoration:underline;}
+div.comment h2.grey {color:#888;font-size:26px;margin:0;}
+div.comment div#idc {color:#000;font-size:18px;margin:0px 0px 10px 0;width:100%;border-top:0px solid #888;border-bottom:1px solid #888;padding:10px 0 5px 0;text-align:left;}
+div.comment div#idc a {text-decoration:none;color:#FFF;font-size:14px;font-weight:bold;font-family: Arial;font-stretch: condensed;margin:10px 10px 10px 0;}
+div.comment div#idc a#verify {display:block;width:100px;height:23px;background:url(images/li_bg4.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#verify:hover {display:block;width:100px;height:23px;background:url(images/li_bg5.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#full {display:block;width:159px;height:23px;background:url(images/li_bg4.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#full:hover {display:block;width:159px;height:23px;background:url(images/li_bg5.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#vote {display:block;width:100px;height:23px;background:url(images/li_bg4.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#vote:hover {display:block;width:100px;height:23px;background:url(images/li_bg5.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#signature {display:block;width:110px;height:23px;background:url(images/li_bg4.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#signature:hover {display:block;width:110px;height:23px;background:url(images/li_bg5.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#mixnet {display:block;width:104px;height:23px;background:url(images/li_bg4.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#mixnet:hover {display:block;width:104px;height:23px;background:url(images/li_bg5.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#public {display:block;width:100px;height:23px;background:url(images/li_bg4.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment div#idc a#public:hover {display:block;width:100px;height:23px;background:url(images/li_bg5.jpg) repeat-x;text-align:center;padding:7px 0 0 0;float:left;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div.comment h3{font-size:18px;color:#09F;}
+div.comment img{float:left;padding:4px;border:0px solid #DDD; margin:5px 20px 15px 0;}
+div.comment img.avatar{float:left;padding:4px;border:1px solid #DDD; margin:5px 15px 10px 0;}
+div.comment ul{margin:10px 0 10px 20px;padding:0;}
+div.comment ul li{margin:0;padding:0;list-style:disc;}
+div.comment ol{margin:10px 0 10px 30px;padding:0;}
+div.comment ol li{margin:0;padding:0;list-style:decimal;}
+div.comment p{margin:10px 0;padding:0;}
+div.comment blockquote, div.comment pre{margin:15px 0px;padding:1px 15px 1px 45px;border-left:0px;background:url(images/quote.html) no-repeat;font-family:'Courier New', Courier;}
+div.comment blockquote cite{margin:5px 0 0;display:block;}
+div.comment code{font:1em 'Courier New', Courier, Fixed;padding:10px 15px;border:1px dashed #BBB;background:#F3F3F3;display:block;margin:15px 0px;}
+div.comment quote{padding:0px 0px 0px 60px;background:#000 url(images/quote.html) 2px 2px no-repeat;display:block;margin:15px 0px;}
+div.comment quote code{padding:0;border:none;display:block;margin:0px;}
+
+img.centered{display:block;margin-left:auto;margin-right:auto;}
+img.alignright{padding:4px;margin:0 0 2px 7px;display:inline;}
+img.alignleft{padding:4px;margin:0 7px 2px 0;display:inline;}
+.alignright{float:right;}
+.alignleft{float:left}
+
+/* comments form */
+div#commentform{background:transparent;margin:0;text-align:left;padding:10px 17px 5px 25px; border:0px solid #444;}
+div#commentform li{margin:0 0 11px 0;}
+div#commentform li input{width:375px; border:1px solid #444; background:#FFF; }
+div#commentform li textarea{width:550px;height:200px;border:1px solid #DDD; background:#FFF; color:#444;}
+div#commentform li input, div#commentform li textarea{background:#FFF; border:1px solid #DDD;font-size:12px; color:#444; padding:4px; }
+div#commentform li input.submitbutton{border:1px solid #462; width:auto; background:#462; padding:5px; color:#FFF;height:30px;}
+
+div#commentform-user{background:transparent;margin:0;text-align:left;padding:10px 17px 5px 25px; border:0px solid #444;}
+div#commentform-user li{margin:0 0 11px 0; color:#444;}
+div#commentform-user li a:link, div#commentform-user li a:visited{color:#462;text-decoration:underline;}
+div#commentform-user li a:hover{color:#BD8; text-decoration:underline;}
+div#commentform-user li textarea{width:550px; height:200px; border:1px solid #444; background:#FFF;}
+div#commentform-user li input, div#commentform-user li textarea{background:#FFF; border:1px solid #FFE; font-size:12px;color:#444;padding:4px;font-family:Arial;}
+div#commentform-user li input.submitbutton{border:1px solid #462; background:#462; padding:0; color:#FFF; height:30px; width:auto;}
+
+ol.trackback{margin:0 0 0 20px;}
+ol.trackback li{list-style:decimal;}
+ol.trackback li a{color:#462;}
+
+/* sidebox */
+div.sidebox{background:url(images/form_bg.html) left top repeat-x #582; border:#BD6 1px solid;padding:10px 18px 0px 18px;margin:0 0 20px 0;}
+div.sidebox div.sidebox-heading{margin:0 0 10px 0;}
+div.sidebox div.sidebox-heading h2{font-size:180%;font-weight:normal;color:#EFB;font-family:Georgia;margin:0 0 6px 0;}
+div.sidebox ul{padding:0px;margin:0px;list-style:none;}
+div.sidebox ul li{padding:4px 0 4px 15px;}
+div.sidebox ul li ul{padding:0px;margin:5px 0 -2px 0px;list-style:none;}
+div.sidebox ul li ul li{padding:4px 0 4px 15px;}
+div.sidebox li a, div.sidebox li a:link, div.sidebox li a:visited {color:#BD8; font-weight:bold;}
+div.sidebox li a:hover{color:#EFB;}
+
+/* footer */
+div#footer a:link, div#footer a:visited{color:#09F;text-decoration:underline;}
+div#footer a:hover{color:#09F;text-decoration:none;}
+div#footer div#footblock1 {width:240px;margin:0;display:block;float:left;background:#d4d4d4;padding:0;}
+div#footer div#footblock1 a img{margin:0;padding:0;border-right:1px solid #adadad;}
+
+div#footer div#footblock2 {width:180px;margin:0;display:block;float:left;background:#d4d4d4;text-align:center;border-right:1px solid #adadad;font-weight:bold;}
+div#footer div#footblock2 div#follow{display:block;float:left;margin:15px 15px 0 15px;}
+div#footer div#footblock2 img#twitter {border:3px solid #d4d4d4;margin:8px 5px 0 0;background:#d4d4d4;float:left;}
+div#footer div#footblock2 img#twitter:hover {border:3px solid #999;margin:8px 5px 0 0;background:#999;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+div#footer div#footblock2 img#fb {border:3px solid #d4d4d4;margin:8px 0 0 0;;background:#d4d4d4;float:left;}
+div#footer div#footblock2 img#fb:hover {border:3px solid #999;margin:8px 0 0 0;background:#999;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+
+div#footer div#footblock3 {width:200px;height:37px;margin:0;display:block;float:left;background:#d4d4d4;text-align:center;border-right:1px solid #adadad;font-weight:bold;}
+
+
+div#footer div#footblock4 {width:100px;padding:13px 30px 0 30px;margin:0;display:block;float:left;font-weight:bold;text-align:left;}
+div#footer div#footblock4 a {position:relative;top:-15px;left:50px;width:85px;height:25px;display:block;background:url(images/logo-bg.jpg); text-decoration:none}
+div#footer div#footblock4 a:hover {background-position: -85px 0px;}
+div#footer div#footblock4 a span.logotext { position: absolute; left: -5000px; text-decoration:none}
+
+div#backtotop {position:relative;top:2px;}
+
+/* topmenu */
+div#topmenu{position:absolute;top:25px;right:0px;height:34px;}
+div#topmenu li.current_page_item a {color:#000;}
+
+#topmenu ul {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#topmenu li {float:left;display:block;font-family: Arial; font-stretch: condensed;text-transform:uppercase;background:none;padding:15px 7px 0 7px; color:#fff;text-decoration:none; font-weight:900;height:34px;}
+	
+#topmenu li a, #topmenu li a:link, #topmenu li a:visited, #topmenu li a:active {
+	color: #fff;
+	display: block;
+	margin: 0px;
+	padding:0;
+	font-size:13px;
+	font-family: Arial;
+	font-stretch: condensed;
+	font-weight:900;
+	text-decoration:none;
+	}
+
+#topmenu li a:hover {
+	color: #000;
+	display: block;
+	margin: 0px;
+	padding:0;
+	font-size:13px;
+	font-family: Arial;
+	font-stretch: condensed;
+	font-weight:900;
+	text-decoration:none;
+	}
+	
+#topmenu li li a, #topmenu li li a:link, #topmenu li li a:visited, #topmenu li li a:active {
+	width: 150px;
+	height:auto;
+	font-size:14px;
+	color: #666;
+	font-family: Arial,tahoma, century gothic,Georgia,  sans-serif;
+	font-weight: bold;
+	text-transform:none;
+	border-top:1px dashed #666;
+	margin:0 0 -20px 0;
+	padding:8px 7px 6px 7px;
+	background:#FFF;
+	}
+	
+#topmenu li li a:hover {
+	color: #000;
+	padding:8px 7px 6px 7px;
+	font-size:14px;
+	background: #FFF;
+	}
+
+#topmenu li ul {
+	z-index: 9999;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 160px;
+	margin: -5px 0 0 -15px;
+	padding: 0px;
+	}
+
+#topmenu li li { margin:0 0 -20px 0;
+	}
+
+#topmenu li ul a { 
+	width: 140px;
+	}
+
+#topmenu li ul a:hover, #topmenu li ul a:active { 
+	}
+
+#topmenu li ul ul {
+	margin: -31px 0 0 170px;
+	}
+
+#topmenu li:hover ul ul, #topmenu li:hover ul ul ul, 
+#topmenu li.sfhover ul ul, #topmenu li.sfhover ul ul ul {
+	left: -999em;
+	}
+
+#topmenu li:hover ul, #topmenu li li:hover ul, 
+#topmenu li li li:hover ul, #topmenu li.sfhover ul, 
+#topmenu li li.sfhover ul, #topmenu li li li.sfhover ul {
+	left: auto;
+	}
+
+#topmenu li:hover, #topmenu li.sfhover { 
+	position: static;
+	}
+#footer {height: 100%; min-height: 100px}
+
+input.wpcf7-form        {padding: 0 10px 0 10px}
+input.wpcf7-text	{height:30px;width:248px;border:1px solid #999; padding: 0 10px 0 10px;-webkit-box-shadow: 0px 0px 4px #aaa; -moz-box-shadow: 0px 0px 4px #aaa; box-shadow: 0px 0px 4px #aaa;}
+.wpcf7 textarea         {border:1px solid #999; padding: 10px;-webkit-box-shadow: 0px 0px 4px #aaa; -moz-box-shadow: 0px 0px 4px #aaa; box-shadow: 0px 0px 4px #aaa;width:248px}
+input.wpcf7-text:hover, textarea.wpcf7:hover { background: #eee; }
+input.wpcf7-submit	{height:30px;width:150px;color:#FFF;background:#09F;border:1px solid #09F;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;margin-left:-48px;}
+input.wpcf7-submit:hover  {background:#ff9933;border:1px solid  #e6e4e2}
