@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="he">
 <head>
 <meta charset="UTF-8">
-<title>Verify Your Vote &laquo; Wombat Voting System</title>
+<title>ודא/י הצבעתך &laquo; Wombat Voting System</title>
 <link rel="shortcut icon" href="wp-content/themes/wombat/images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="wp-content/themes/wombat/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="wp-includes/css/classic-themes.min3781.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="wp-includes/css/dist/block-library/style.min3781.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-includes/css/dist/block-library/style-rtl.min3781.css" type="text/css" media="screen" />
 <style>
-#search-box { width: 400px; padding: 8px; border: 1px solid #999; font-size: 14px; margin: 10px 0; }
+#search-box { width: 400px; padding: 8px; border: 1px solid #999; font-size: 14px; margin: 10px 0; direction: ltr; }
 #search-btn { padding: 8px 20px; background: #09F; color: #fff; border: 1px solid #09F; border-radius: 4px; cursor: pointer; font-size: 14px; }
 #search-btn:hover { background: #ff9933; border-color: #e6e4e2; }
-#result { margin: 20px 0; padding: 15px; background: #f5f5f5; border: 1px solid #ddd; display: none; word-break: break-all; font-family: 'Courier New', monospace; font-size: 12px; }
+#result { margin: 20px 0; padding: 15px; background: #f5f5f5; border: 1px solid #ddd; display: none; word-break: break-all; font-family: 'Courier New', monospace; font-size: 12px; direction: ltr; text-align: left; }
 #no-result { margin: 20px 0; color: #c00; display: none; }
 </style>
 </head>
-<body id="page">
+<body id="page2">
 <div class="wpr">
 
 <div id="header">
 <div id="logo"><a href="index.html"><img src="wp-content/themes/wombat/images/logo.gif" alt="Wombat Voting System" title="Wombat Voting System" /></a></div>
-<div id="lang"><a href="he/audit.html"><img src="wp-content/uploads/2011/05/hebrew.png"" alt="עברית" title="לחץ כאן לעברית" /></a></div>
+<div id="lang"><a href="../audit.html">English</a></div>
 <div id="topmenu">
 <ul>
-<li><a href="index.html" title="Home">HOME</a></li>
+<li><a href="index.html" title="דף הבית">דף הבית</a></li>
 <li>/</li>
-<li><a href="how-to-vote.html" title="How does it work">HOW DOES IT WORK</a></li>
+<li><a href="how-to-vote.html" title="כיצד המערכת פועלת">כיצד המערכת פועלת</a></li>
 <li>/</li>
-<li><a href="about-us.html">ABOUT US</a></li>
+<li><a href="about-us.html">אודותינו</a></li>
 <li>/</li>
-<li><a href="faq.html">FAQ</a></li>
+<li><a href="faq.html">שאלות נפוצות</a></li>
 <li>/</li>
-<li><a href="audit-vote.html">AUDIT VOTE</a></li>
+<li><a href="audit-vote.html">בקרה</a></li>
 <li>/</li>
-<li><a href="contact.html">CONTACT</a></li>
+<li><a href="contact.html">צרו קשר</a></li>
 </ul>
 </div>
 </div>
@@ -44,28 +44,28 @@
 <div id="main">
 <div class="comment">
 
-<h2>Verify Your Vote</h2>
+<h2>ודא/י הצבעתך</h2>
 
-<p>Enter your vote receipt string below to verify that your encrypted vote appears on the public ballot tracking page.</p>
+<p>הזינו את מחרוזת הקבלה שלכם למטה כדי לוודא שההצבעה המוצפנת שלכם מופיעה בדף מעקב ההצבעות הציבורי.</p>
 
 <p>
-<input type="text" id="search-box" placeholder="Paste your receipt string here..." />
-<button id="search-btn" onclick="searchVote()">Search</button>
+<input type="text" id="search-box" placeholder="הדביקו את מחרוזת הקבלה כאן..." />
+<button id="search-btn" onclick="searchVote()">חפש</button>
 </p>
 
 <div id="result"></div>
-<div id="no-result">Vote not found. Please check your receipt string and try again.</div>
+<div id="no-result">ההצבעה לא נמצאה. אנא בדקו את מחרוזת הקבלה ונסו שוב.</div>
 
-<p>The string below is your encrypted and digitally signed vote. The string does not reveal any information about who you voted for.</p>
+<p>המחרוזת למטה היא ההצבעה המוצפנת והחתומה דיגיטלית שלכם. המחרוזת אינה חושפת מידע כלשהו על למי הצבעתם.</p>
 
-<p>You can see the exact format of the content displayed below in the following <a href="public-keys.html">link</a>.</p>
+<p>ניתן לראות את הפורמט המדויק של התוכן המוצג למטה ב<a href="public-keys.html">קישור</a> הבא.</p>
 
-<h3>All Recorded Votes</h3>
-<div id="all-votes" style="max-height:400px; overflow-y:auto; background:#f5f5f5; border:1px solid #ddd; padding:10px; font-family:'Courier New',monospace; font-size:11px;">
-Loading votes...
+<h3>כל ההצבעות שנרשמו</h3>
+<div id="all-votes" style="max-height:400px; overflow-y:auto; background:#f5f5f5; border:1px solid #ddd; padding:10px; font-family:'Courier New',monospace; font-size:11px; direction:ltr; text-align:left;">
+טוען הצבעות...
 </div>
 
-<div id="backtotop"><a href="#"><img src="wp-content/themes/wombat/images/backtotop.gif" alt="Back to top" /></a></div>
+<div id="backtotop"><a href="#"><img src="wp-content/themes/wombat/images/backtotop.gif" alt="חזרה למעלה" /></a></div>
 </div>
 </div>
 </div>
@@ -79,7 +79,7 @@ Loading votes...
 <a href="http://portal.idc.ac.il/he/main/homepage/Pages/homepage.aspx"><img src="wp-content/themes/wombat/images/idc.gif" alt="IDC" /></a>
 </div>
 <div id="footblock2">
-<div id="follow">Follow Us :
+<div id="follow">
 <a href="http://twitter.com/#!/wombatVoting"><img id="twitter" src="wp-content/themes/wombat/images/twitter.png" alt="Twitter" /></a>
 <a href="http://www.facebook.com/pages/Wombat-Voting/142415579165278"><img id="fb" src="wp-content/themes/wombat/images/fb.png" alt="Facebook" /></a>
 </div>
@@ -91,7 +91,7 @@ Loading votes...
 <script>
 var votesData = [];
 
-fetch('auditvote/votesfile.txt')
+fetch('../auditvote/votesfile.txt')
   .then(function(r) { return r.text(); })
   .then(function(text) {
     votesData = text.trim().split('\n').filter(function(l) { return l.trim() !== ''; });
@@ -101,7 +101,7 @@ fetch('auditvote/votesfile.txt')
     }).join('');
   })
   .catch(function() {
-    document.getElementById('all-votes').innerHTML = 'Could not load votes file.';
+    document.getElementById('all-votes').innerHTML = 'לא ניתן לטעון את קובץ ההצבעות.';
   });
 
 function searchVote() {
@@ -113,7 +113,7 @@ function searchVote() {
   if (!query) return;
   for (var i = 0; i < votesData.length; i++) {
     if (votesData[i].indexOf(query) !== -1) {
-      resultDiv.innerHTML = '<strong>Vote #' + (i+1) + ' found:</strong><br /><br />' + votesData[i];
+      resultDiv.innerHTML = '<strong>הצבעה #' + (i+1) + ' נמצאה:</strong><br /><br />' + votesData[i];
       resultDiv.style.display = 'block';
       return;
     }
