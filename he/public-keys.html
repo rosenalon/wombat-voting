@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="UTF-8">
+<title>מפתחות ציבוריים &laquo; Wombat Voting System</title>
+<link rel="shortcut icon" href="wp-content/themes/wombat/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="wp-content/themes/wombat/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-includes/css/classic-themes.min3781.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-includes/css/dist/block-library/style-rtl.min3781.css" type="text/css" media="screen" />
+</head>
+<body id="page2">
+<div class="wpr">
+<div id="header">
+<div id="logo"><a href="index.html"><img src="wp-content/themes/wombat/images/logo.gif" alt="Wombat Voting System" title="Wombat Voting System" /></a></div>
+<div id="lang"><a href="../index.html">English</a></div>
+<div id="topmenu">
+<ul>
+<li><a href="index.html" title="דף הבית">דף הבית</a></li>
+<li>/</li>
+<li><a href="how-to-vote.html" title="כיצד המערכת פועלת">כיצד המערכת פועלת</a></li>
+<li>/</li>
+<li><a href="about-us.html">אודותינו</a></li>
+<li>/</li>
+<li><a href="faq.html">שאלות נפוצות</a></li>
+<li>/</li>
+<li><a href="audit-vote.html">בקרה</a></li>
+<li>/</li>
+<li><a href="contact.html">צרו קשר</a></li>
+</ul>
+</div>
+</div>
+
+<div id="middle">
+<div class="background">
+<div class="layoutright">
+<div id="main">
+<div class="comment">
+
+<h2>מפתח הצפנת ElGamal ציבורי:</h2>
+
+<p><strong>עקומה אליפטית Prime256</strong></p>
+<p><code>(4333ef31bd18e1ce786ad5a2b3c9b3b9cbc2b1edcf964aaaac9290ed2c7140b3,
+031fd5b1d4f3b3e105787928d2897a05c9f0de25d2f1533a2bc6483401a94a09)</code></p>
+
+<h2>מפתחות חתימת ECDSA ציבוריים:</h2>
+
+<p><strong>עקומה אליפטית Prime192</strong></p>
+
+<p>כרטיס חכם 1 -<br />
+<code>(1a10f4fefbf47a8e0f40119a5535232d29c85e76b45eb923,
+e9ae5eb43cbcdbdd4179934effeb5858babf364c0ebe89c0)</code></p>
+
+<p>כרטיס חכם 2 -<br />
+<code>(12c36b6734f9e2de7d81b2a53ddb186d11c3a8b946a1127c,
+1c80560bb3df414821b5ca3ba00ab4594240a359bc19957e)</code></p>
+
+<p>ועדה -<br />
+<code>(982e5297f6d32c494ba394566302d70ea6e7d36cf1a6c6be,
+10a52a25780dd2195c5cf7b8b2b8b5ba5c5fb1c0ed1e4c99)</code></p>
+
+<h2>פורמט הצבעה בודדת (מחרוזות ב-base 64):</h2>
+
+<p>*sc = כרטיס חכם</p>
+
+<p><code>sc1ID$counter1@sc2ID$counter2@SchoolID@E(v,c)
+@sign_sc2(Enc(v,r) | sn1 | sn2)@g^r1@sign_sc1(g^r1 | sn1)@ g^r2@sign_sc2(g^r2 | sn2)</code></p>
+
+<p><strong>פורמט אלמנט:</strong><br />
+<code>Enc(v,c) -> "(x,y):(z,k)"</code><br />
+<code>sign_scX(Y) -> "(r,s)"</code><br />
+<code>g^r1, g^r2 -> "(x,y)"</code><br />
+<code>scxID, counter, SchoolId -> Numbers</code></p>
+
+<p><strong>פורמט חתימה:</strong><br />
+<code>sign_sc2(E(v,r) | sn1 | sn2) = sign_sc2((x,y):(z,k)~sc1ID$counter1~sc2ID$counter2)</code><br />
+<code>sign_sc1(g^r1 | sn1) = sign_sc1((x,y)~sc1ID$counter1)</code><br />
+<code>sign_sc2(g^r2 | sn2) = sign_sc2((x,y)~sc2ID$counter2)</code></p>
+
+<h2>פורמט קובץ קולות:</h2>
+<p><strong>קובץ הקולות מכיל מספר קולות. כל שורה בקובץ מייצגת הצבעה בודדת בפורמט שהוצג לעיל.</strong></p>
+
+<h2>פורמט חתימת קובץ קולות:</h2>
+<p><strong>הפורמט הוא זוג ECDSA "(r,s)" המיוצג בצורה הקסדצימלית.</strong></p>
+
+<h2>אפליקציית אימות פתק (לאנדרואיד):</h2>
+<p><strong>ניתן להוריד בקלות את VeriBallot על ידי סריקת הברקוד הבא או לחיצה על הברקוד שתפנה אתכם ל-Android MarketPlace.</strong></p>
+<p><a href="https://market.android.com/details?id=com.veriballot"><img src="../wp-content/uploads/2011/05/veriballot.png" alt="VeriBallot" title="VeriBallot" /></a></p>
+
+<div id="backtotop"><a href="#">&uarr;</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footblock1">
+<a href="http://www.cs.tau.ac.il/cpiis/mission.html"><img src="wp-content/themes/wombat/images/cpiis.gif" alt="CPIIS" /></a>
+<a href="http://www.tau.ac.il/"><img src="wp-content/themes/wombat/images/tau.gif" alt="TAU" /></a>
+<a href="http://portal.idc.ac.il/he/main/homepage/Pages/homepage.aspx"><img src="wp-content/themes/wombat/images/idc.gif" alt="IDC" /></a>
+</div>
+<div id="footblock2">
+<div id="follow">
+<a href="http://twitter.com/#!/wombatVoting"><img id="twitter" src="wp-content/themes/wombat/images/twitter.png" alt="Twitter" /></a>
+<a href="http://www.facebook.com/pages/Wombat-Voting/142415579165278"><img id="fb" src="wp-content/themes/wombat/images/fb.png" alt="Facebook" /></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

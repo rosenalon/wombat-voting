@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="UTF-8">
+<title>כיצד להצביע &laquo; Wombat Voting System</title>
+<link rel="shortcut icon" href="wp-content/themes/wombat/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="wp-content/themes/wombat/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-includes/css/classic-themes.min3781.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-includes/css/dist/block-library/style-rtl.min3781.css" type="text/css" media="screen" />
+</head>
+<body id="page2">
+<div class="wpr">
+<div id="header">
+<div id="logo"><a href="index.html"><img src="wp-content/themes/wombat/images/logo.gif" alt="Wombat Voting System" title="Wombat Voting System" /></a></div>
+<div id="lang"><a href="../index.html">English</a></div>
+<div id="topmenu">
+<ul>
+<li><a href="index.html" title="דף הבית">דף הבית</a></li>
+<li>/</li>
+<li><a href="how-to-vote.html" title="כיצד המערכת פועלת">כיצד המערכת פועלת</a></li>
+<li>/</li>
+<li><a href="about-us.html">אודותינו</a></li>
+<li>/</li>
+<li><a href="faq.html">שאלות נפוצות</a></li>
+<li>/</li>
+<li><a href="audit-vote.html">בקרה</a></li>
+<li>/</li>
+<li><a href="contact.html">צרו קשר</a></li>
+</ul>
+</div>
+</div>
+
+<div id="middle">
+<div class="background">
+<div class="layoutright">
+<div id="left">
+<ul>
+<li><a href="how-to-vote.html">כיצד להצביע</a></li>
+<li><a href="the-tallying-process.html">תהליך הספירה</a></li>
+<li><a href="verifiability.html">אימות</a></li>
+<li><a href="privacy.html">פרטיות</a></li>
+</ul>
+</div>
+
+<div id="main">
+<div class="comment">
+
+<h2>כיצד להצביע</h2>
+
+<h3>1. זיהוי</h3>
+<p><img src="../wp-content/uploads/2011/05/vote1.gif" alt="זיהוי" title="זיהוי" /></p>
+<p>הבוחר/ת נכנס/ת לקלפי ומזדהה באמצעות תעודת זהות. ועדת הקלפי בודקת שהבוחר/ת מופיע/ה ברשימת הבוחרים ולא הצביע/ה עדיין. הוועדה מורה לבוחר/ת להיכנס לתא ההצבעה.</p>
+
+<h3>2. הכנת הפתק</h3>
+<p><img src="../wp-content/uploads/2011/05/vote2.gif" alt="הצבעה" title="הצבעה" /></p>
+<p>הבוחר/ת נכנס/ת לתא ההצבעה ובוחר/ת באמצעות מסך מגע. מכונת ההצבעה מדפיסה פתק בעל שני חלקים ניתקים: האחד מכיל את ההצבעה בטקסט גלוי והשני מכיל את ההצבעה מוצפנת.</p>
+
+<h3>3. ביקורת הפתק (אופציונלי)</h3>
+<p>בשלב זה הבוחר/ת יכול/ה לבחור בין ביקורת הפתק לבין שימוש בו להצבעה.</p>
+
+<p><strong>א)</strong> אם הבוחר/ת בוחר/ת להמשיך,</p>
+<p><img src="../wp-content/uploads/2011/05/vote4.gif" alt="הצבעה" title="הצבעה" /></p>
+<p>הבוחר/ת לוקח/ת את הפתק, מקפל/ת אותו על הטקסט הגלוי, יוצא/ת מתא ההצבעה וממשיך/ה לשלב 4.</p>
+
+<p><strong>ב)</strong> אם הבוחר/ת בוחר/ת לבצע ביקורת, מכונת ההצבעה חושפת כיצד הפתק נוצר. קיים אלגוריתם פשוט (המשתמש בנתונים הנוספים שמכונת ההצבעה סיפקה לבקשת הביקורת) הבודק שהטקסט הגלוי וההצפנה האלקטרונית שעל הפתק תואמים. ניתן להריץ את האלגוריתם בעודך בקלפי, או בכל זמן מאוחר יותר. כל מי שיש לו רקע בסיסי בהצפנה יכול לכתוב את אלגוריתם הבדיקה. למשל, <a href="https://market.android.com/details?id=com.veriballot">אפליקציית אנדרואיד</a> זו מבצעת בדיקה זו.</p>
+
+<p><img src="../wp-content/uploads/2011/05/vote3.gif" alt="ביקורת" title="ביקורת" /></p>
+
+<p>אלגוריתם הבדיקה יכול לעבור או להיכשל:</p>
+<ul>
+<li>אם הטקסט הגלוי <em>אינו</em> תואם את טקסט הצופן שעל הפתק שהודפס בשלב 2, חוסר ההתאמה נחשף ומכונת ההצבעה נפסלת.</li>
+<li>אחרת, הפתק <em>עקבי</em>. הבוחר/ת חוזר/ת לשלב 2 כדי להצביע עם פתק <em>אחר</em> (כיוון שפתק שעבר ביקורת אינו יכול לשמש להצבעה).</li>
+</ul>
+
+<h3>4. הצבעה</h3>
+<p><img src="../wp-content/uploads/2011/05/vote5.gif" alt="הצבעה" title="הצבעה" /></p>
+<p>הבוחר/ת מוסר/ת את הפתק המקופל לוועדת הקלפי. הוועדה חותמת את הפתק וטקסט הצופן נסרק ומפורסם בדף מעקב ההצבעות הציבורי.</p>
+
+<p><img src="../wp-content/uploads/2011/05/vote6.gif" alt="הצבעה" title="הצבעה" /></p>
+<p>הבוחר/ת קורע/ת את הפתק לשניים מול חברי ועדת הקלפי. הטקסט הגלוי המכוסה מוכנס לתיבת הקלפי, וטקסט הצופן ניתן לבוחר/ת כקבלה. הבוחר/ת יכול/ה להשתמש בקבלה כדי לוודא שההצבעה המוצפנת אכן הועלתה לדף מעקב ההצבעות הציבורי.</p>
+
+<div id="backtotop"><a href="#">&uarr;</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footblock1">
+<a href="http://www.cs.tau.ac.il/cpiis/mission.html"><img src="wp-content/themes/wombat/images/cpiis.gif" alt="CPIIS" /></a>
+<a href="http://www.tau.ac.il/"><img src="wp-content/themes/wombat/images/tau.gif" alt="TAU" /></a>
+<a href="http://portal.idc.ac.il/he/main/homepage/Pages/homepage.aspx"><img src="wp-content/themes/wombat/images/idc.gif" alt="IDC" /></a>
+</div>
+<div id="footblock2">
+<div id="follow">
+<a href="http://twitter.com/#!/wombatVoting"><img id="twitter" src="wp-content/themes/wombat/images/twitter.png" alt="Twitter" /></a>
+<a href="http://www.facebook.com/pages/Wombat-Voting/142415579165278"><img id="fb" src="wp-content/themes/wombat/images/fb.png" alt="Facebook" /></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

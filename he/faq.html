@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="UTF-8">
+<title>שאלות נפוצות &laquo; Wombat Voting System</title>
+<link rel="shortcut icon" href="wp-content/themes/wombat/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="wp-content/themes/wombat/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-includes/css/classic-themes.min3781.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="wp-includes/css/dist/block-library/style-rtl.min3781.css" type="text/css" media="screen" />
+</head>
+<body id="page2">
+<div class="wpr">
+<div id="header">
+<div id="logo"><a href="index.html"><img src="wp-content/themes/wombat/images/logo.gif" alt="Wombat Voting System" title="Wombat Voting System" /></a></div>
+<div id="lang"><a href="../index.html">English</a></div>
+<div id="topmenu">
+<ul>
+<li><a href="index.html" title="דף הבית">דף הבית</a></li>
+<li>/</li>
+<li><a href="how-to-vote.html" title="כיצד המערכת פועלת">כיצד המערכת פועלת</a></li>
+<li>/</li>
+<li><a href="about-us.html">אודותינו</a></li>
+<li>/</li>
+<li><a href="faq.html">שאלות נפוצות</a></li>
+<li>/</li>
+<li><a href="audit-vote.html">בקרה</a></li>
+<li>/</li>
+<li><a href="contact.html">צרו קשר</a></li>
+</ul>
+</div>
+</div>
+
+<div id="middle">
+<div class="background">
+<div class="layoutright">
+<div id="main">
+<div class="comment">
+
+<h2>שאלות נפוצות</h2>
+
+<p><a href="#no1">1. מהו "אימות מקצה לקצה"?</a><br />
+<a href="#no2">2. האם האקר מוכשר (או מדינה זרה) יכול לזייף תוצאות?</a><br />
+<a href="#no3">3. האם אני יכול/ה לסמוך על הצפנה לשמירה על פרטיותי?</a><br />
+<a href="#no4">4. מדוע "אימות בוחרים" חשוב?</a><br />
+<a href="#no5">5. כיצד אני יודע/ת שהקול שלי נספר?</a><br />
+<a href="#no6">6. כיצד אני יודע/ת שהקבלה שלי מקודדת נכון את ההצבעה שלי?</a><br />
+<a href="#no7">7. האם הקבלה יכולה לחשוף את הצבעתי?</a><br />
+<a href="#no8">8. כיצד מערכת Wombat מונעת הכנסת פתקים מזויפים?</a><br />
+<a href="#no9">9. אין לי הכשרה מתמטית. כיצד אני יודע/ת שכל ההצפנות נספרו כהלכה?</a><br />
+<a href="#no10">10. האם קיימות מערכות הצבעה אחרות התומכות ב"אימות מקצה לקצה"?</a></p>
+
+<p><a name="no1"></a><strong>1. מהו "אימות מקצה לקצה"?</strong><br />
+מערכת הצבעה היא <a href="http://en.wikipedia.org/wiki/End-to-end_auditable_voting_systems">ניתנת לאימות מקצה לקצה</a> אם כל בוחר/ת יכול/ה לוודא שהצבעתו/ה נרשמה ונספרה כהלכה. במערכת כזו אף אחד, אפילו לא מנהלי מערכת ההצבעה, אינו יכול לשנות הצבעה מבלי שהדבר יתגלה.</p>
+
+<p><a name="no2"></a><strong>2. האם האקר מוכשר (או מדינה זרה) יכול לזייף תוצאות?</strong><br />
+לא. בתרחיש הגרוע ביותר <em>הפרטיות</em> של המערכת עלולה להיפגע, אך <em>השלמות</em> של המערכת תמיד נשמרת. הבה נדגיש זאת מעט יותר. הבה ניקח בחשבון את התרחיש הבלתי סביר, הגרוע ביותר, שבו האקר משיג שליטה מלאה הן על התוכנה והן על כל המפתחות הסודיים של המערכת. אפילו במקרה זה, המערכת מבטיחה שאם ההאקר ינסה לשנות את ההצבעות המפורסמות או את התוצאה הסופית, הבודקים יגלו את הניסיון ויחשפו את הזיוף. לפיכך, אם הבחירות עוברות ביקורת ומאומתות בהצלחה על ידי הבוחרים, הבוחרים יכולים להיות בטוחים שתוצאות הבחירות נכונות.</p>
+
+<p><a name="no3"></a><strong>3. האם אני יכול/ה לסמוך על הצפנה לשמירה על פרטיותי?</strong><br />
+הצפנה משמשת בהרחבה ביישומים חשובים רבים (בנקאות מקוונת, עסקאות פיננסיות, חתימות אלקטרוניות, שימושים צבאיים) שלעתים קרובות כרוכים במיליארדי דולרים. קיים תקן NIST מפורט הנוגע לפרימיטיבים קריפטוגרפיים אלו, ואנו פועלים בהתאם לתקנים אלו.</p>
+
+<p><a name="no4"></a><strong>4. מדוע "אימות בוחרים" חשוב?</strong><br />
+מניעת הונאת בחירות הייתה תמיד אתגר מרכזי. באופן מפתיע, גם בארה"ב נושא זה היה בעייתי. דוגמה עדכנית היא <a href="http://en.wikipedia.org/wiki/United_States_presidential_election,_2004#Election_controversy">בחירות 2004 לנשיאות ארה"ב</a>. המקור העיקרי לבעיות עם הציוד ששימש בבחירות אלו היה חוסר השקיפות שלו: פשוט לא הייתה דרך לבוחרים לוודא שהצבעתם נרשמה כהלכה. <a href="http://en.wikipedia.org/wiki/Robert_F._Kennedy,_Jr">רוברט פ. קנדי ג'וניור</a>, למשל, טוען במאמר שכותרתו "<a href="http://www.commondreams.org/views06/0601-34.htm">האם בחירות 2004 נגנבו?</a>" כי "80,000 קולות שהיו אמורים להיספר לקרי נספרו לבוש". אנו מאמינים שהמסר ברור מאוד. אפילו אם לא התבצעה הונאה בבחירות 2004 בארה"ב, <em>התהליך</em> עדיין נכשל, כיוון שלא מספיק שהמערכת פועלת כהלכה, חובה גם שניתן יהיה להוכיח זאת באופן משכנע. בקיצור: מערכות הצבעה מודרניות חייבות להיות ניתנות לאימות. אנו מאמינים בתוקף שלכל מערכות ההצבעה המודרניות צריכה להיות תכונה זו, ובנינו את Wombat Voting כדי להדגים רעיון זה.</p>
+
+<p><a name="no5"></a><strong>5. כיצד אני יודע/ת שהקול שלי נספר?</strong><br />
+לאחר שאתם בוחרים במסך המגע, ההצבעה שלכם מוצפנת ולאחר מכן מודפסת על נייר. ההדפסה מכילה שני חלקים: טקסט גלוי שמוכנס לתיבת הקלפי וההצבעה המוצפנת שלכם שמופיעה בדף מעקב ההצבעות הציבורי וניתנת לכם כקבלה. תוכלו לוודא, בכל עת, שטקסט הצופן שניתן לכם כקבלה תואם את הערך שמופיע בדף מעקב ההצבעות הציבורי.</p>
+
+<p><a name="no6"></a><strong>6. כיצד אני יודע/ת שהקבלה שלי מקודדת נכון את ההצבעה שלי?</strong><br />
+שאלה שנשאלת לעתים קרובות היא "כיצד אוכל להיות בטוח/ה שהערך על הקבלה שלי (שמופיע גם בדף מעקב ההצבעות) אכן מצפין את הצבעתי?" התשובה לכך טמונה בתהליך ייצור הקבלה. לאחר ביצוע הבחירה במסך המגע, מודפס פתק. הפתק מכיל: 1) הקבלה (שאמורה להכיל את ההצבעה המוצפנת שלכם), ו-2) ההצבעה שלכם בטקסט גלוי. אתם יכולים (וצריכים) לוודא שהערך המופיע בטקסט הגלוי הוא אכן הבחירה שלכם. אם תרצו, תוכלו גם ללחוץ על כפתור "ביקורת" ולבקש מהמכונה לחשוף את האקראיות שנעשה בה שימוש להצפנת הצבעתכם, ובכך לוודא שהמכונה מדפיסה פתקים עקביים שבהם ההצפנה תואמת את הטקסט הגלוי. לבסוף, תוכלו לוודא שההודעה המוצפנת (שניתנת לכם גם כקבלה) תואמת את הערך שבדף מעקב ההצבעות.</p>
+
+<p><a name="no7"></a><strong>7. האם הקבלה יכולה לחשוף את הצבעתי?</strong><br />
+כדי להגן על פרטיותכם, הקבלה מכילה את הצבעתכם מוצפנת ב<a href="http://en.wikipedia.org/wiki/Public-key_cryptography">מערכת הצפנה עם מפתח ציבורי</a>. משמעות הדבר היא שמכונת ההצבעה יכולה להצפין את הצבעתכם, אך אף אחד אינו יכול לפענח אותה ללא ידיעת המפתח הפרטי הסודי. במערכת שלנו יש קבוצת נאמנים (שצריכה לכלול, למשל, נציגים מהממשלה, המפלגות השונות, מערכת המשפט וארגוני זכויות אדם) המחזיקה באופן משותף את המפתח הסודי באופן שאף צד אינו יכול לפענח הודעה ללא עזרת האחרים. כתוצאה מכך, אף אחד, כולל אתם או כל תת-קבוצה של הנאמנים, אינו יכול לפענח את הקבלה ולגלות מה היא מקודדת (ראו <a href="http://en.wikipedia.org/wiki/Threshold_cryptosystem">מערכת הצפנה סיפית</a> לפרטים נוספים).</p>
+
+<p><a name="no8"></a><strong>8. כיצד מערכת Wombat מונעת הכנסת פתקים מזויפים?</strong><br />
+אנו סומכים על חברי ועדת הקלפי שיזהו כל בוחר/ת ויאפשרו לכל בוחר/ת להצביע פעם אחת בלבד.</p>
+
+<p><a name="no9"></a><strong>9. אין לי הכשרה מתמטית. כיצד אני יודע/ת שכל ההצפנות נספרו כהלכה?</strong><br />
+הצפנה משמשת בהרחבה כיום, למשל, כמעט כל הדפדפנים תומכים בהצפנה. כל מי שמבין הצפנה יכול לכתוב תוכנית פשוטה הבודקת את תקינות הבחירות. אפילו אם אינכם מבינים הצפנה בעצמכם, תוכלו עדיין לבדוק את תקינות המערכת באמצעות תוכנת ביקורת שהושגה ממקור אמין.</p>
+
+<p><a name="no10"></a><strong>10. האם קיימות מערכות הצבעה אחרות התומכות ב"אימות מקצה לקצה"?</strong><br />
+כן. הצבעה קריפטוגרפית היא תחום מחקר פעיל, והוצעו פרוטוקולים רבים הניתנים לאימות מקצה לקצה. <a href="http://en.wikipedia.org/wiki/End-to-end_auditable_voting_systems#Examples">מספר פרוטוקולים</a> מומשו, ומערכת ההצבעה <a href="http://scantegrity.org/">Scantegrity II</a> אף שימשה בבחירות <a href="http://www.takomaparkmd.gov/">טאקומה פארק</a>, מרילנד ב<a href="http://www.scantegrity.org/washington/">נובמבר 2009</a>. המערכת שלנו היא גרסה של המערכות הנ"ל, עם מספר תכונות ייחודיות, כמו השימוש המשולב בפתקים אלקטרוניים וניירות.</p>
+
+<div id="backtotop"><a href="#">&uarr;</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footblock1">
+<a href="http://www.cs.tau.ac.il/cpiis/mission.html"><img src="wp-content/themes/wombat/images/cpiis.gif" alt="CPIIS" /></a>
+<a href="http://www.tau.ac.il/"><img src="wp-content/themes/wombat/images/tau.gif" alt="TAU" /></a>
+<a href="http://portal.idc.ac.il/he/main/homepage/Pages/homepage.aspx"><img src="wp-content/themes/wombat/images/idc.gif" alt="IDC" /></a>
+</div>
+<div id="footblock2">
+<div id="follow">
+<a href="http://twitter.com/#!/wombatVoting"><img id="twitter" src="wp-content/themes/wombat/images/twitter.png" alt="Twitter" /></a>
+<a href="http://www.facebook.com/pages/Wombat-Voting/142415579165278"><img id="fb" src="wp-content/themes/wombat/images/fb.png" alt="Facebook" /></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
