@@ -71,7 +71,7 @@ div#middle .withoutleft div#main{margin:0px 12px 0px 12px;}
 div#mainmiddle{margin:0px 0px 10px 0px; border:1px solid #FFF:}
 div#main .withright{}
 div#content{width:auto;}
-div#footer{width:auto;padding:40px 0px 0px 0px;clear:both;color:#838383;background:url(images/footer_bg.gif) top repeat-x #d4d4d4;font-size:11px;min-height:100px;max-height:20%;display:block;}
+div#footer{width:auto;padding:10px 0px 0px 0px;clear:both;color:#838383;background:url(images/footer_bg.gif) top repeat-x #d4d4d4;font-size:11px;min-height:50px;max-height:20%;display:block;}
 
 /* Left */
 div#left{width:285px;padding:0px 0px 0px 0px;float:left;margin:5px 0px 0px 0px;}
