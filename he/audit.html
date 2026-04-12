@@ -72,55 +72,21 @@
 </div>
 </div>
 
+<div class="wpr" id="backtotop"><a href="#"><img src="wp-content/themes/wombat/images/backtotop.gif" alt=""/></a></div>
 <div id="footer">
-<div id="footblock1">
-<a href="http://www.cs.tau.ac.il/cpiis/mission.html"><img src="wp-content/themes/wombat/images/cpiis.gif" alt="CPIIS" /></a>
-<a href="http://www.tau.ac.il/"><img src="wp-content/themes/wombat/images/tau.gif" alt="TAU" /></a>
-<a href="http://portal.idc.ac.il/he/main/homepage/Pages/homepage.aspx"><img src="wp-content/themes/wombat/images/idc.gif" alt="IDC" /></a>
+<div class="wpr floatholder" style="padding-bottom:3px;">
+<div id="footblock1"><a href="http://www.cs.tau.ac.il/cpiis/mission.html" TARGET="_blank"><img src="wp-content/themes/wombat/images/cpiis.gif" alt="" border="0" style="padding:0 10px 0 10px;" /></a>
+<a href="http://www.tau.ac.il/" TARGET="_blank"><img src="wp-content/themes/wombat/images/tau.gif" alt="" border="0" style="padding:0 10px 0 10px;" /></a>
+<a href="http://portal.idc.ac.il/he/main/homepage/Pages/homepage.aspx" TARGET="_blank"><img src="wp-content/themes/wombat/images/idc.gif" alt="" border="0" /></a></div>
+<div id="footblock2"><div id="follow"></div>
+<a href="http://twitter.com/#%21/wombatVoting" TARGET="_blank"><img src="wp-content/themes/wombat/images/twitter.png" alt="" id="twitter" align="absmiddle" /></a><a href="http://www.facebook.com/pages/Wombat-Voting/142415579165278" TARGET="_blank"><img src="wp-content/themes/wombat/images/fb.png" alt="" id="fb" align="absmiddle"/></a></div>
+<div id="footblock3"><br clear="all" />&copy; Wombat Voting System 2011<br clear="all" /></div>
+<div id="footblock4">????? <a href="http://skydesign.com.au/" TARGET="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="logotext"></span></a></div>
+<br clear="all" />
 </div>
-<div id="footblock2">
-<div id="follow">
-<a href="http://twitter.com/#!/wombatVoting"><img id="twitter" src="wp-content/themes/wombat/images/twitter.png" alt="Twitter" /></a>
-<a href="http://www.facebook.com/pages/Wombat-Voting/142415579165278"><img id="fb" src="wp-content/themes/wombat/images/fb.png" alt="Facebook" /></a>
-</div>
-</div>
-</div>
-
 </div>
 
-<script>
-var votesData = [];
-
-fetch('../auditvote/votesfile.txt')
-  .then(function(r) { return r.text(); })
-  .then(function(text) {
-    votesData = text.trim().split('\n').filter(function(l) { return l.trim() !== ''; });
-    var container = document.getElementById('all-votes');
-    container.innerHTML = votesData.map(function(v, i) {
-      return '<div style="padding:3px 0; border-bottom:1px solid #eee;">' + (i+1) + '. ' + v + '</div>';
-    }).join('');
-  })
-  .catch(function() {
-    document.getElementById('all-votes').innerHTML = 'לא ניתן לטעון את קובץ ההצבעות.';
-  });
-
-function searchVote() {
-  var query = document.getElementById('search-box').value.trim();
-  var resultDiv = document.getElementById('result');
-  var noResult = document.getElementById('no-result');
-  resultDiv.style.display = 'none';
-  noResult.style.display = 'none';
-  if (!query) return;
-  for (var i = 0; i < votesData.length; i++) {
-    if (votesData[i].indexOf(query) !== -1) {
-      resultDiv.innerHTML = '<strong>הצבעה #' + (i+1) + ' נמצאה:</strong><br /><br />' + votesData[i];
-      resultDiv.style.display = 'block';
-      return;
-    }
-  }
-  noResult.style.display = 'block';
-}
-</script>
 </body>
 </html>
+
 
