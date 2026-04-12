@@ -299,8 +299,4 @@ input.wpcf7-text:hover, textarea.wpcf7:hover { background: #eee; }
 input.wpcf7-submit	{height:30px;width:150px;color:#FFF;background:#09F;border:1px solid #09F;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;margin-left:0px;}
 input.wpcf7-submit:hover  {background:#ff9933;border:1px solid  #e6e4e2}
 
-/* RTL overrides */
-div.comment img{float:right; clear:right; margin:5px 0 15px 20px;}
-div.comment h3{clear:both;}
-p{text-align:right;}
 
